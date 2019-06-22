@@ -25,8 +25,7 @@ SECRET_KEY = '&r0ix7+cq#l=zfaj_e@b5_vpd*a1cc17f7wrvcakvtz7xdx%sx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '159.65.154.49']
-
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '159.65.154.49', 'solvit.uz', 'dg.solvit.uz']
 
 # Application definition
 

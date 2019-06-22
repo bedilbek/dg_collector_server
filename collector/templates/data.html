@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DATA</title>
+    <link rel="stylesheet" type="text/css" href="{% static "collector/css/bootstrap.min.css" %}"/>
+    <script src="{% static "collector/js/jquery.min.js" %}"></script>
+    <script src="{% static "collector/js/popper.min.js" %}"></script>
+    <script src="{% static "collector/js/bootstrap.min.js" %}"></script>
+</head>
+<body>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Temperature</th>
+      <th scope="col">Humidity</th>
+      <th scope="col">Gas</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for index, datum in data %}
+    <tr>
+      <th scope="row">{{index}}</th>
+      <td>{{datum.t}} °C</td>
+      <td>{{datum.h}} %</td>
+      <td>{{datum.g}}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>
